@@ -58,4 +58,5 @@ In conclusion, the Stock Market Prediction using Machine Learning LSTM project a
 MIT License.
 
 ## Contact
-[Your Name] - [Your Email] - Open to collaborations.
+Sai Kumar Pampari - skpampari2022@gmail.com - Open to collaborations.
+
