@@ -1,17 +1,27 @@
 # Reproducible LSTM-Based Time Series Forecasting for Financial Index Data
 
 ## Overview
-This repository provides a reproducible implementation of an LSTM-based time series forecasting pipeline for financial index data (S&P 500). The project is structured as a research-style
-artifact, emphasizing proper train/test separation, leakage-free preprocessing, reproducibility, and quantitative evaluation.
-This is based on a Master's project in Data Science, focusing on stock price prediction for S&P 500 index data from 1950 to 2022, with extensions for broader financial AI research.
+This repository provides a reproducible implementation of an LSTM-based time series forecasting pipeline. The project is structured as a research-style artifact, emphasizing reproducible ML systems, proper evaluation methodology, and robust experimentation practices. The goal is to demonstrate reliable ML system design rather than a specific domain application.
+
+The artifact is based on a Master's project in Data Science, focusing on time-series forecasting using S&P 500 index data (1950–2022). The repository is designed as a systems-oriented research artifact for building reliable AI systems through reproducible pipelines and rigorous evaluation.
+
 
 ## Why This Matters (PhD/Research Context)
 
-This repository is intended as a research artifact demonstrating:
-- clean ML engineering practices for time series,
-- correct evaluation methodology (no leakage),
-- reproducible experimentation,
-- a foundation for future research extensions (baselines, uncertainty, regime shifts).
+This repository is intended as a systems-oriented research artifact demonstrating:
+- reproducible ML pipelines and experiment tracking
+- leakage-free preprocessing and correct evaluation
+- evidence-based model validation with strong baselines
+- a foundation for  scalable AI systems and reliable deployment (baselines, uncertainty, regime shifts).
+
+## Systems for AI Relevance
+This project aligns with systems-for-AI research because it focuses on building reproducible and reliable ML pipelines, including:
+- modular pipeline design (data, training, evaluation)
+- leakage control and correct evaluation
+- reproducibility controls (fixed seeds, deterministic execution)
+- baseline comparisons and rigorous validation
+
+These system-level practices are critical for scalable AI systems, which require reliability, reproducibility, and correct evaluation in real-world deployments.
 
 ## Research Scope & Intent
 This project intentionally focuses on **univariate time series forecasting** (using closing prices only)
@@ -58,12 +68,14 @@ The goal is not to propose a novel deep learning architecture, but to:
 - Market regime shifts and exogenous variables are not explicitly modeled.
 These limitations are intentional and will be addressed in future iterations.
     
-## Next Planned Improvements
-
-- Add baseline models (naive forecast, moving average; optional ARIMA)
-- Add walk-forward validation (rolling window)
+## Next Planned Improvements (Systems & AI)
+- Add baseline models (naive forecast, moving average, ARIMA)
+- Add walk-forward validation (rolling window) for robust evaluation
 - Add uncertainty estimation (e.g., Monte Carlo dropout)
-- Add decision-oriented evaluation (e.g., directional accuracy / cost-aware)
+- Add decision-oriented evaluation (directional accuracy, cost-aware metrics)
+- Add pipeline automation and reproducible deployment (Docker, CI)
+- Add benchmarking and performance analysis for training and inference
+
 
 ## Installation
 1. Clone the repo: `git clone https://github.com/sk/advanced-stock-price-forecasting-lstm.git`
